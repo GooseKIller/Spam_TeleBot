@@ -1,0 +1,13 @@
+import telebot
+
+bot = telebot.TeleBot('5021415752:AAGn81izooqslxYtetWB7oB0wDhFpHDKa9g')
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    if massage.text=="Конь":
+	   
+ bot.send_message(message.chat.id,'Здравствуйте!')
+	    bot.send_message(message.chat.id, message.from_user.last_name)
+	    start(message)
+
+bot.polling()
